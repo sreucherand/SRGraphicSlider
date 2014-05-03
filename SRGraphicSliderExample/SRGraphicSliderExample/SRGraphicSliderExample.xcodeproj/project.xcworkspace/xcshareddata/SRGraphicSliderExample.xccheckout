@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63921283-AEE9-4F06-8F1F-916655CDF34D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SRGraphicSliderExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30F6C43B-2CC7-4E4B-B38B-8DB3F0165980</key>
+		<string>ssh://github.com/sreucherand/SRGraphicSlider.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SRGraphicSliderExample/SRGraphicSliderExample/SRGraphicSliderExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30F6C43B-2CC7-4E4B-B38B-8DB3F0165980</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/sreucherand/SRGraphicSlider.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30F6C43B-2CC7-4E4B-B38B-8DB3F0165980</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30F6C43B-2CC7-4E4B-B38B-8DB3F0165980</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SRGraphicSlider</string>
+		</dict>
+	</array>
+</dict>
+</plist>

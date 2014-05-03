@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD4DBA05191582DB00B50847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4DBA04191582DB00B50847 /* Foundation.framework */; };
+		DD4DBA07191582DB00B50847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4DBA06191582DB00B50847 /* CoreGraphics.framework */; };
+		DD4DBA09191582DB00B50847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4DBA08191582DB00B50847 /* UIKit.framework */; };
+		DD4DBA0F191582DB00B50847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBA0D191582DB00B50847 /* InfoPlist.strings */; };
+		DD4DBA11191582DB00B50847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBA10191582DB00B50847 /* main.m */; };
+		DD4DBA15191582DB00B50847 /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBA14191582DB00B50847 /* SRAppDelegate.m */; };
+		DD4DBA17191582DB00B50847 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBA16191582DB00B50847 /* Images.xcassets */; };
+		DD4DBA36191582F600B50847 /* SRGraphicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBA35191582F600B50847 /* SRGraphicSlider.m */; };
+		DD4DBA3A1915831700B50847 /* SRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBA381915831700B50847 /* SRMainViewController.m */; };
+		DD4DBA3B1915831700B50847 /* SRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBA391915831700B50847 /* SRMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD4DBA01191582DB00B50847 /* SRGraphicSliderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRGraphicSliderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4DBA04191582DB00B50847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD4DBA06191582DB00B50847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD4DBA08191582DB00B50847 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD4DBA0C191582DB00B50847 /* SRGraphicSliderExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SRGraphicSliderExample-Info.plist"; sourceTree = "<group>"; };
+		DD4DBA0E191582DB00B50847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD4DBA10191582DB00B50847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD4DBA12191582DB00B50847 /* SRGraphicSliderExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRGraphicSliderExample-Prefix.pch"; sourceTree = "<group>"; };
+		DD4DBA13191582DB00B50847 /* SRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAppDelegate.h; sourceTree = "<group>"; };
+		DD4DBA14191582DB00B50847 /* SRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAppDelegate.m; sourceTree = "<group>"; };
+		DD4DBA16191582DB00B50847 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD4DBA1D191582DB00B50847 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DD4DBA34191582F600B50847 /* SRGraphicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRGraphicSlider.h; path = ../../../SRGraphicSlider/SRGraphicSlider.h; sourceTree = "<group>"; };
+		DD4DBA35191582F600B50847 /* SRGraphicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRGraphicSlider.m; path = ../../../SRGraphicSlider/SRGraphicSlider.m; sourceTree = "<group>"; };
+		DD4DBA371915831700B50847 /* SRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMainViewController.h; sourceTree = "<group>"; };
+		DD4DBA381915831700B50847 /* SRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMainViewController.m; sourceTree = "<group>"; };
+		DD4DBA391915831700B50847 /* SRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4DB9FE191582DB00B50847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBA07191582DB00B50847 /* CoreGraphics.framework in Frameworks */,
+				DD4DBA09191582DB00B50847 /* UIKit.framework in Frameworks */,
+				DD4DBA05191582DB00B50847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD4DB9F8191582DB00B50847 = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA0A191582DB00B50847 /* SRGraphicSliderExample */,
+				DD4DBA03191582DB00B50847 /* Frameworks */,
+				DD4DBA02191582DB00B50847 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4DBA02191582DB00B50847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA01191582DB00B50847 /* SRGraphicSliderExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4DBA03191582DB00B50847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA04191582DB00B50847 /* Foundation.framework */,
+				DD4DBA06191582DB00B50847 /* CoreGraphics.framework */,
+				DD4DBA08191582DB00B50847 /* UIKit.framework */,
+				DD4DBA1D191582DB00B50847 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD4DBA0A191582DB00B50847 /* SRGraphicSliderExample */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA33191582E300B50847 /* SRGraphicSlider */,
+				DD4DBA13191582DB00B50847 /* SRAppDelegate.h */,
+				DD4DBA14191582DB00B50847 /* SRAppDelegate.m */,
+				DD4DBA16191582DB00B50847 /* Images.xcassets */,
+				DD4DBA0B191582DB00B50847 /* Supporting Files */,
+				DD4DBA371915831700B50847 /* SRMainViewController.h */,
+				DD4DBA381915831700B50847 /* SRMainViewController.m */,
+				DD4DBA391915831700B50847 /* SRMainViewController.xib */,
+			);
+			path = SRGraphicSliderExample;
+			sourceTree = "<group>";
+		};
+		DD4DBA0B191582DB00B50847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA0C191582DB00B50847 /* SRGraphicSliderExample-Info.plist */,
+				DD4DBA0D191582DB00B50847 /* InfoPlist.strings */,
+				DD4DBA10191582DB00B50847 /* main.m */,
+				DD4DBA12191582DB00B50847 /* SRGraphicSliderExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD4DBA33191582E300B50847 /* SRGraphicSlider */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBA34191582F600B50847 /* SRGraphicSlider.h */,
+				DD4DBA35191582F600B50847 /* SRGraphicSlider.m */,
+			);
+			name = SRGraphicSlider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD4DBA00191582DB00B50847 /* SRGraphicSliderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4DBA2D191582DB00B50847 /* Build configuration list for PBXNativeTarget "SRGraphicSliderExample" */;
+			buildPhases = (
+				DD4DB9FD191582DB00B50847 /* Sources */,
+				DD4DB9FE191582DB00B50847 /* Frameworks */,
+				DD4DB9FF191582DB00B50847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRGraphicSliderExample;
+			productName = SRGraphicSliderExample;
+			productReference = DD4DBA01191582DB00B50847 /* SRGraphicSliderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4DB9F9191582DB00B50847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sylvain Reucherand";
+			};
+			buildConfigurationList = DD4DB9FC191582DB00B50847 /* Build configuration list for PBXProject "SRGraphicSliderExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD4DB9F8191582DB00B50847;
+			productRefGroup = DD4DBA02191582DB00B50847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD4DBA00191582DB00B50847 /* SRGraphicSliderExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4DB9FF191582DB00B50847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBA3B1915831700B50847 /* SRMainViewController.xib in Resources */,
+				DD4DBA0F191582DB00B50847 /* InfoPlist.strings in Resources */,
+				DD4DBA17191582DB00B50847 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4DB9FD191582DB00B50847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBA36191582F600B50847 /* SRGraphicSlider.m in Sources */,
+				DD4DBA11191582DB00B50847 /* main.m in Sources */,
+				DD4DBA3A1915831700B50847 /* SRMainViewController.m in Sources */,
+				DD4DBA15191582DB00B50847 /* SRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD4DBA0D191582DB00B50847 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4DBA0E191582DB00B50847 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4DBA2B191582DB00B50847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD4DBA2C191582DB00B50847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD4DBA2E191582DB00B50847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SRGraphicSliderExample/SRGraphicSliderExample-Prefix.pch";
+				INFOPLIST_FILE = "SRGraphicSliderExample/SRGraphicSliderExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD4DBA2F191582DB00B50847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SRGraphicSliderExample/SRGraphicSliderExample-Prefix.pch";
+				INFOPLIST_FILE = "SRGraphicSliderExample/SRGraphicSliderExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4DB9FC191582DB00B50847 /* Build configuration list for PBXProject "SRGraphicSliderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBA2B191582DB00B50847 /* Debug */,
+				DD4DBA2C191582DB00B50847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4DBA2D191582DB00B50847 /* Build configuration list for PBXNativeTarget "SRGraphicSliderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBA2E191582DB00B50847 /* Debug */,
+				DD4DBA2F191582DB00B50847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4DB9F9191582DB00B50847 /* Project object */;
+}

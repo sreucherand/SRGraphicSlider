@@ -34,6 +34,7 @@
     
     self.slider.width = 200;
     self.slider.backgroundColor = self.view.backgroundColor;
+    self.slider.cursorBackgroundColor = [UIColor colorWithRed:23/255.0f green:27/255.0f blue:36/255.0f alpha:1];
     self.slider.minimumColor = [UIColor whiteColor];
     self.slider.maximumColor = [UIColor colorWithRed:23/255.0f green:27/255.0f blue:36/255.0f alpha:1];
 }

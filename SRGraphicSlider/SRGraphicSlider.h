@@ -18,4 +18,5 @@
 
 @property (strong, nonatomic) UIColor *minimumColor;
 @property (strong, nonatomic) UIColor *maximumColor;
+@property (strong, nonatomic) UIColor *cursorBackgroundColor;
 @end

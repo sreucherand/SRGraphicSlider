@@ -56,6 +56,7 @@ static CGFloat const kTouchAbilitySurface = 50;
     
     self.backgroundColor = [UIColor whiteColor];
     
+    _cursorBackgroundColor = [UIColor whiteColor];
     _minimumValue = 0;
     _maximumValue = 1;
     _value = 0.5;
@@ -86,23 +87,27 @@ static CGFloat const kTouchAbilitySurface = 50;
     }
 }
 
+- (void)setCursorBackgroundColor:(UIColor *)cursorBackgroundColor
+{
+    _cursorBackgroundColor = cursorBackgroundColor;
+    
+    [self setNeedsDisplay];
+}
+
 - (void)setValue:(CGFloat)value
 {
-    if (value != self.value) {
-        if (value > self.maximumValue) {
-            value = self.maximumValue;
-        }
-        
-        if (value < self.minimumValue) {
-            value = self.minimumValue;
-        }
-        
-        _value = value;
-        
-        [self setNeedsDisplay];
+    if (value > self.maximumValue) {
+        value = self.maximumValue;
     }
     
+    if (value < self.minimumValue) {
+        value = self.minimumValue;
+    }
+    
+    [self setNeedsDisplay];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
+    
+    _value = value;
 }
 
 -(void)setWidth:(CGFloat)width
@@ -136,7 +141,7 @@ static CGFloat const kTouchAbilitySurface = 50;
     
     _startLocation = location;
     
-    if (CGRectContainsPoint(CGRectMake([self locationFromValue:self.value] - kTouchAbilitySurface / 2, CGRectGetMidY([self calcTimelineRect]), kTouchAbilitySurface, kTouchAbilitySurface), location)) {
+    if (CGRectContainsPoint(CGRectMake([self locationFromValue:self.value] - kTouchAbilitySurface / 2, CGRectGetMidY([self calcTimelineRect]) - kTouchAbilitySurface / 2, kTouchAbilitySurface, kTouchAbilitySurface), location)) {
         _trackingStatus = TrackingOn;
         _startTrackingValue = self.value;
         
@@ -153,6 +158,8 @@ static CGFloat const kTouchAbilitySurface = 50;
     
     if (_trackingStatus == TrackingOn) {
         self.value = _startTrackingValue + [self valueFromTranslation:location.x - _startLocation.x];
+
+        [self sendActionsForControlEvents:UIControlEventTouchDragExit];
         
         return YES;
     }
@@ -198,7 +205,7 @@ static CGFloat const kTouchAbilitySurface = 50;
     
     CGContextStrokePath(context);
     
-    CGContextSetFillColorWithColor(context, self.backgroundColor.CGColor);
+    CGContextSetFillColorWithColor(context, self.cursorBackgroundColor.CGColor);
     CGContextSetStrokeColorWithColor(context, self.minimumColor.CGColor);
     CGContextMoveToPoint(context, CGRectGetMinX([self calcTimelineRect]), CGRectGetMidY([self calcTimelineRect]));
     CGContextAddLineToPoint(context, [self locationFromValue:self.value], CGRectGetMidY([self calcTimelineRect]));

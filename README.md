@@ -121,7 +121,7 @@ Contains the minimum color of the receiver.
 
 **Discussion**
 
-The default value of this property is RVG(10, 92, 255).
+The default value of this property is RGB(10, 92, 255).
 
 #### maximumColor
 
@@ -131,7 +131,17 @@ Contains the maximum color of the receiver.
 
 **Discussion**
 
-The default value of this property is RVG(166, 166, 166).
+The default value of this property is RGB(166, 166, 166).
+
+#### cursorBackgroundColor
+
+Contains the background color of the cursor.
+
+	@property (strong, nonatomic) UIColor *cursorBackgroundColor;
+
+**Discussion**
+
+The default value of this property is RGB(255, 255, 255).
 
 # Contact
 
